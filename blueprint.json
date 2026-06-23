@@ -1,0 +1,46 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.2", "wp": "latest" },
+  "login": false,
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/GDKrescendo/mvrk-preview/main/mvrk-theme.zip"
+      },
+      "options": { "activate": true }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/GDKrescendo/mvrk-preview/main/mvrk-giveaway.zip"
+      },
+      "options": { "activate": true }
+    },
+    { "step": "mkdir", "path": "/wordpress/wp-content/mu-plugins" },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/mvrk-demo-seed.php",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/GDKrescendo/mvrk-preview/main/mvrk-demo-seed.php"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "MVRK",
+        "permalink_structure": "/%postname%/",
+        "woocommerce_coming_soon": "no"
+      }
+    }
+  ]
+}
