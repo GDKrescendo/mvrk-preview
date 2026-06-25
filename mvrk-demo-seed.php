@@ -63,17 +63,17 @@ function mvrk_demo_seed() {
 }
 
 /**
- * Create the 4 SKUs (placeholder prices — CONFIRM WITH CLIENT).
+ * Create the 4 SKUs. Price confirmed by client: $59.99 each (June 2026).
  */
 function mvrk_demo_products() {
 	$items = array(
-		array( 'next-generation-alkaloids',                 'Next Generation Alkaloids – Cherry Flavor',   'Next Generation Alkaloids', '39.99', 'next-gen-cherry.png',
+		array( 'next-generation-alkaloids',                 'Next Generation Alkaloids – Cherry Flavor',   'Next Generation Alkaloids', '59.99', 'next-gen-cherry.png',
 			'Precision-dosed Next Generation Alkaloid tablets in a clean cherry profile. 300mg per tablet, scored into quarters for a measured 75mg serving — 40 servings per jar. Measured, predictable, repeatable. For adults 21+.' ),
-		array( 'next-generation-alkaloids-blue-razz-flavor', 'Next Generation Alkaloids – Blue Razz Flavor', 'Next Generation Alkaloids', '39.99', 'next-gen-blue-razz.png',
+		array( 'next-generation-alkaloids-blue-razz-flavor', 'Next Generation Alkaloids – Blue Razz Flavor', 'Next Generation Alkaloids', '59.99', 'next-gen-blue-razz.png',
 			'The same 300mg precision format in a bold blue razz profile. Scored to 75mg quarter-servings, 40 per jar. Consistency you can feel. For adults 21+.' ),
-		array( '7-hydroxy-tablets',                          '7-Hydroxy Tablets – Cherry Flavor',           '7-Hydroxy',                 '27.99', '7-hydroxy-cherry.png',
+		array( '7-hydroxy-tablets',                          '7-Hydroxy Tablets – Cherry Flavor',           '7-Hydroxy',                 '59.99', '7-hydroxy-cherry.png',
 			'7-Hydroxy tablets in cherry. 100mg per tablet, scored into quarters for a 25mg serving — 40 servings per jar. Compact, carry-anywhere, dosed by the quarter. For adults 21+.' ),
-		array( '7-hydroxy-tablets-blue-razz-flavor',         '7-Hydroxy Tablets – Blue Razz Flavor',        '7-Hydroxy',                 '27.99', '7-hydroxy-blue-razz.png',
+		array( '7-hydroxy-tablets-blue-razz-flavor',         '7-Hydroxy Tablets – Blue Razz Flavor',        '7-Hydroxy',                 '59.99', '7-hydroxy-blue-razz.png',
 			'7-Hydroxy in blue razz at 100mg per tablet (25mg per quarter-serving), 40 servings per jar. The same clean, no-guesswork serving in every jar. For adults 21+.' ),
 	);
 
